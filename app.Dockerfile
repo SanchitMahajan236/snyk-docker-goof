@@ -1,6 +1,6 @@
 FROM ghost:2.37.2 as ghost
 
-FROM node:20.0-bullseye-slim as node
+FROM node:20.14-bullseye-slim as node
 
 # Copy manifest files
 COPY --from=ghost /var/lib/ghost /var/lib/ghost
